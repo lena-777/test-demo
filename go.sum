@@ -1,0 +1,8 @@
+github.com/FlowerWrong/gosocks v0.0.0-20190107083327-06f41c52f497 h1:SGixsKNotEnmQXOPC5ZvXrQQi9Xl3PzwwFvbEG0qq2M=
+github.com/FlowerWrong/gosocks v0.0.0-20190107083327-06f41c52f497/go.mod h1:Uc2ULeNTGnqFgYCBeYbFmEHKB6zlvzy0dORe2Xyo3nM=
+github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da h1:KjTM2ks9d14ZYCvmHS9iAKVt9AyzRSqNU1qabPih5BY=
+github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da/go.mod h1:eHEWzANqSiWQsof+nXEI9bUVUyV6F53Fp89EuCh2EAA=
+golang.org/x/crypto v0.19.0 h1:ENy+Az/9Y1vSrlrvBSyna3PITt4tiZLf7sgCjZBX7Wo=
+golang.org/x/crypto v0.19.0/go.mod h1:Iy9bg/ha4yyC70EfRS8jz+B6ybOBKMaSxLj6P6oBDfU=
+golang.org/x/sys v0.17.0 h1:25cE3gD+tdBA7lp7QfhuV+rJiE9YXTcS3VG1SqssI/Y=
+golang.org/x/sys v0.17.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=

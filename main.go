@@ -16,10 +16,18 @@ import "C"
 import (
 	"NewProxy/core"
 	"context"
+	"fmt"
 	"net"
 	"strconv"
 	"sync"
 )
+
+func main() {
+	// Need a main function to make CGO compile package as C shared library
+
+	// TODO
+	fmt.Println("start success.")
+}
 
 const (
 	AtypIPv4        = 1
@@ -35,10 +43,10 @@ const (
 
 var proxyMap sync.Map
 
-//流量统计map
+// 流量统计map
 var ProcessInfo = NewProcessMap()
 
-//tcp map
+// tcp map
 var tcpmap = NewTcpMap()
 
 type mccInfo struct {
@@ -59,10 +67,10 @@ type ProxyInfo struct {
 	proxymode int          //代理控制    1为代理 TCP   2为代理 UDP   3为 代理TCP+UDP
 }
 
-//流量统计
+// 流量统计
 var mcc = make(chan mccInfo, 1000)
 
-//流量统计携程
+// 流量统计携程
 func f(ctx context.Context) {
 	for {
 		select {
@@ -272,10 +280,5 @@ func SetDnsProxy(a1 *C.char, a2 C.int, a3 *C.char, a4 *C.char) bool {
 	}
 
 	return true
-
-}
-
-func main() {
-	// Need a main function to make CGO compile package as C shared library
 
 }
